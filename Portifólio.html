@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfólio — Rodrigo</title>
+
+  <style>
+    :root{
+      --bg: #ffffff;
+      --surface: #f6f7f8;
+      --text: #0f1720;
+      --muted: #6b7280;
+      --accent: #0ea5a4;
+      --maxw: 980px;
+      --gap: 24px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.45;
+      padding:40px 20px;
+      display:flex;
+      justify-content:center;
+    }
+    .wrap{
+      width:100%;
+      max-width:var(--maxw);
+      background:#fff;
+      padding:32px;
+      border-radius:16px;
+      box-shadow:0 6px 20px rgba(17,24,39,0.06);
+    }
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      margin-bottom:28px;
+    }
+    .brand{display:flex;gap:14px;align-items:center;}
+    .logo{
+      width:56px;height:56px;border-radius:12px;
+      background:linear-gradient(135deg,var(--accent),#6ee7b7 80%);
+      display:grid;place-items:center;
+      font-weight:700;color:white;font-size:18px;
+    }
+    .title{display:flex;flex-direction:column;}
+    .title .name{font-size:18px;font-weight:700}
+    .title .role{font-size:13px;color:var(--muted)}
+    nav a{color:var(--muted);text-decoration:none;font-size:14px;margin-left:18px;}
+    nav a:hover{color:var(--text)}
+    main{display:grid;gap:var(--gap);}
+    .about{display:block;}
+    .about p{margin:0 0 12px 0;color:var(--muted)}
+    .cta{display:inline-block;padding:10px 14px;border-radius:10px;
+      border:1px solid rgba(14,165,164,0.12);color:var(--accent);font-weight:600;text-decoration:none;}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;}
+    .card{background:var(--surface);border-radius:12px;padding:14px;box-shadow:0 2px 8px rgba(15,23,32,0.03);}
+    .card h3{margin:0;font-size:15px}
+    .card p{margin:0;color:var(--muted);font-size:14px}
+    .card .meta{margin-top:10px;display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}
+    .chip{background:rgba(10,10,10,0.03);padding:6px 8px;border-radius:999px;font-size:13px;}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .skill{padding:8px 10px;border-radius:999px;background:rgba(14,165,164,0.08);font-weight:600;color:var(--accent);font-size:13px}
+    footer{margin-top:18px;display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">R</div>
+        <div class="title">
+          <div class="name">Rodrigo</div>
+          <div class="role">Desenvolvedor Front-end • Designer</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="sobre" class="about">
+        <h1>Portifólio do Guigo</h1>
+        <p>Sou um super desenvolvedor extremamente abilidoso, que só não é famoso por que não quer, pode ter certeza.</p>
+        <p><a"#projetos">PROJETOS:</a></p>
+      </section>
+
+      <section id="projetos">
+        <h2>Projetos selecionados</h2>
+        <div class="projects">
+          <div class="card">
+            <h3>Youtube</h3>
+            <p> Durante a minha adolescência eu criei SOZINHO o site o youtube, pode confiar</p>
+            <div class="meta"><span class="chip">HTML</span><span>2013</span></div>
+          </div>
+          <div class="card">
+            <h3>Nasa</h3>
+            <p>Enquanto ainda era apenas um estudante, eu fui chamando para fazer sites para a nasa, acredite em mim</p>
+            <div class="meta"><span class="chip">HTML • CSS</span><span>2010</span></div>
+          </div>
+          <div class="card">
+            <h3>Globo</h3>
+            <p>Quando eu me formei, fui chamado para fazer o design do site da globo </p>
+            <div class="meta"><span class="chip">Design</span><span>2019</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato">
+        <h2>Contato</h2>
+        <p>Email: <a href="mailto:rodrigo@email.com">rodrigohernandes@colegiopaulodetarso.com.br</a></p>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
